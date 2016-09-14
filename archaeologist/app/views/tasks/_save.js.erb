@@ -1,0 +1,9 @@
+$("ul.errors").html("")
+<% if @task.errors.any? %>
+  <% @task.errors.full_messages.each do |message| %>
+    $("ul.errors").append($("<li />").html("<%= message.html_safe %>"))
+  <% end %>
+<% else %>
+  $(".task-todo-index").html("<%= escape_javascript(render 'index_todo') %>")
+  $("#task-modal").modal("hide")
+<% end %>

@@ -1,0 +1,1173 @@
+https://github.com/dosuken123/archaeologist.git
+
+********************************************************
+TODO
+
+DONE: Change CofeeScript to Javascript
+TODO: Copy -> ready to edit task name
+DONE: Delete DONE every month and mark how many tasks ended to express it as stars.
+TODO: Delete new task pop window. If + button is pushed, add one row and show popup at the place.
+TODO: Autoreload
+TODO: Win and Mac desktop native application
+
+TODO: Copy/Delete
+TODO: Usability
+	[D] [P] [O] [C] [DEL] -> Icon
+
+TODO: Show Star icon with lines of TODO to mark it as prioritized
+	-> Abolish "PEND"
+
+DONE: Hovor layout for History located at bottom (Cool one with javascript)
+	History page is just for LISTS
+	-> When click navi bar buttons, jump to the page directly without JS 
+
+DONE: Generate an icon when create new project.
+	-> Set it as initial icon
+	-> Show it on "projects" ans "tasks" - the left pain and when appened new task
+	TODO: The feature of choosing project when generate new task is little collapsed
+	-> Set same icon size. Need discription?
+
+DONE: Any -> trivial
+
+TODO: Import and export "DevelopMemo"
+(New/Copy/OverWrite) -> Distinguish by dates
+Detection to HOT words ordered by high frequency. 
+e.g.
+1. Bootstrap 
+2. C++
+3. SH5
+4. etc
+
+* Ignoring trivial words
+* Focusing library, tecnology
+
+TODO: Show hot words at "History"
+TODO: W=>22:55 B=>00:00 -> Graphical
+********************************************************
+
+//////////////////////////////////////////////////////////////////////////////////////
+[Aug 6th 2015]
+
+hogehoge
+
+hello
+
+
+Histories
+
+
+TODO: Generate TaskLists model
+TODO: Show it at the top
+TODO: Make it editable
+TOOD: If click, add History
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Aug 18th 2015]
+
+http://stackoverflow.com/questions/16179956/deleting-rails-tables-migrations
+rake db:drop # to drop database
+rake db:create # to create same database
+rake db:migrate # to migrate the data.
+rake db:seed
+
+or
+
+rake db:reset
+
+Railsのモデルの作成、検索、更新、削除のよく使うメソッドのまとめ
+http://ruby-rails.hatenadiary.com/entry/20140724/1406142120
+
+ActiveRecord4のバリデーションで複数カラムにユニーク制約を付ける方法
+http://hivecolor.com/id/144
+
+DONE: Mange project
+DONE: Login Session
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Aug 19th 2015]
+
+Railsのセッション管理方法について
+http://shindolog.hatenablog.com/entry/2014/11/02/164118
+
+[Rails] セッション管理をベタで実装してみる
+http://qiita.com/kidach1/items/ebdb4b29336955903029
+
+users_signin POST   /users/signin(.:format)       users#signin
+users_logout POST   /users/logout(.:format)       users#logout
+
+signin_users POST   /users/signin(.:format)       users#signin
+logout_users GET    /users/logout(.:format)       users#logout
+
+What's the difference....?
+
+DONE: Mange project edit
+DONE: Mange project destroy
+
+[Rails3] ログイン認証の要・不要をコントローラーによって使い分ける
+http://rails3try.blogspot.jp/2011/12/rails3_21.html
+
+DONE: Show datetime on top
+TODO: Apend task
+	TODO: Popup dialog
+	DONE: Custom layout
+TODO: Buttons for changing state
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Aug 20th 2015]
+
+TODO: Apend task
+	DONE: Popup dialog
+	DONE: Custom layout
+	DONE: Bootstrap for Sass
+TODO: Buttons for changing state
+
+Railsアプリやgem作る時にいつも入れているgem一覧
+http://sue445.hatenablog.com/entry/2015/03/29/012855
+
+Dialog
+http://jqueryui.com/dialog/#modal-form
+
+Rails 4 で Twitter Bootstrap と Font Awesome を利用する手順
+http://qiita.com/hkusu/items/a549a96dcb2bb935a47b
+
+https://github.com/twbs/bootstrap-sass
+Then, remove all the //= require and //= require_tree statements from the file. Instead, use @import to import Sass files.
+
+Require Bootstrap Javascripts in app/assets/javascripts/application.js:
+//= require jquery
+//= require bootstrap-sprockets
+
+非デザイナーエンジニアが一人でWebサービスを作るときに便利なツール32選
+http://qiita.com/okappy/items/119e31cae9aa9bd9da6d
+
+Bootstrap for Sass
+https://github.com/twbs/bootstrap-sass
+
+TODO: Select project from list
+TODO: Append task
+TODO: Change state
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Aug 21th 2015]
+
+DONE: Addable project image
+DONE: Select project from list
+DONE: Append task
+DONE: Change state
+
+railsのform_forとstrong parametersを使用して画像をアップロードする
+http://joppot.info/2014/05/28/1476
+
+RailsのファイルをアップロードするgemのCarrierWaveのインストール方法
+http://ruby-rails.hatenadiary.com/entry/20141015/1413300088
+
+使用したい環境に応じて編集するファイルを変更
+YAML（環境）	ファイルの場所
+全ての環境のYAML	config/settings.yml
+ローカル環境専用のYAML	config/settings.local.yml
+開発環境専用のYAML	config/settings/development.yml
+テスト環境専用のYAML	config/settings/test.yml
+本番環境専用のYAML	config/settings/production.yml
+
+TODO: ファイルアップロード ライブラリ
+
+Rails上の画像のパス
+http://o.inchiki.jp/obbr/72
+
+Use Image instead of radio button
+http://stackoverflow.com/questions/17541614/use-image-instead-of-radio-button
+
+<label for="recipient-name" class="control-label">Project</label>
+          <input type="text" class="form-control" id="recipient-name">
+
+TODO: Change doing
+	TODO: Click and mark history
+	TODO: Project: Any
+DONE: Layout adujstment
+TODO: How do I use Controller specific stylesheets in Rails 3.2.1?
+	http://stackoverflow.com/questions/9245228/how-do-i-use-controller-specific-stylesheets-in-rails-3-2-1
+TODO: Move priority
+TODO: Manage project, Logout -> Navi bar
+TODO: Priority
+TODO: Use Javascript for smoothing reload
+
+5 Easy Ways to Modify Your Bootstrap Button Styles
+https://bootstrapbay.com/blog/bootstrap-button-styles/
+
+Bootstrap Tables
+http://www.w3schools.com/bootstrap/bootstrap_tables.asp
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Aug 24th 2015]
+
+TODO: Change doing
+	DONE: Click and mark history
+	DONE: OFF
+		DONE: Change OFF button color and make it unclickable
+	DONE: Project: Any
+
+<td><%= @projects.find(task_todo.project_id).project_name %></td>
+
+<td><%= link_to "#{@projects.find(task_todo.project_id).project_name}", task_path(task_todo, new_status: Settings.task_status[:doing]), :method => :put %></td>
+
+Making a table row into a link in Rails using Coffeescript
+http://stackoverflow.com/questions/18677550/making-a-table-row-into-a-link-in-rails-using-coffeescript
+
+<%= link_to 'PEND', update_status_task_path(task_todo, new_status: Settings.task_status[:pend]), class: "btn btn-warning" %>
+
+TODO: if some minutes past, ignore it.
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Aug 25th 2015]
+
+DONE: UTC to JST
+DONE: if some minutes past, ignore it.
+DONE: separate by distinction of date
+	show_history:
+  	distinction_min_hours: 21600 # 6 hours
+DONE: Can not click  OFF
+	DONE: strange append process
+	DONE: Check more
+		DONE: If doing task is moved to other status, Set off.
+TODO: Deploy
+
+/usr/bin/vmrun -T player start "/root/vmware/Redhat7.2_No6_VM/Redhat7.2_No6_VM.vmx" nogui
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Aug 26th 2015]
+
+/usr/bin/vmrun -T player start "/root/vmware/CentOS5.9_MaedaTest/CebtOS5.9_Original.vmx" nogui
+
+rake db:migrate # to migrate the data.
+->
+-------------------
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: database schema has changed: INSERT INTO "schema_migrations" ("version") VALUES (?)
+ActiveRecord::StatementInvalid: SQLite3::SQLException: database schema has changed: INSERT INTO "schema_migrations" ("version") VALUES (?)
+
+SQLite3::SQLException: database schema has changed
+
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+[root@localhost archaeologist]# 
+-------------------
+
+http://stackoverflow.com/questions/21970160/rails-4-sqlite3sqlexception-error
+rake db:reset
+
+DONE: gem
+Could not find gem 'therubyracer (>= 0) ruby' in the gems available on this machine.
+DONE: Doing button
+DONE: Editable memo & TaskName
+	DONE: Imported 
+	DONE: xeditable not work...
+	DONE: update
+DONE: Total working time & break time
+
+TODO: Apatch
+TODO: What is helper
+
+gem install libv8 -v '3.16.14.11' -- --with-system-v8
+gem install libv8 -v '3.11.8.3' -- --with-system-v8
+
+therubyracer 0.11.0 問題まとめ => solved
+http://d.hatena.ne.jp/suu-g/20121222/1356189597
+
+Gemfile.lockをLinuxとMacで分ける
+http://qiita.com/moonsubaru/items/e55a1aa7febedf216502
+
+gem therubyracerについて
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14125216379
+
+libv8とtherubyracer入らない問題にわたしもハマったメモ
+http://inoao.hatenablog.com/entry/2014/03/27/183523
+
+X-editable
+https://vitalets.github.io/x-editable/
+
+<td <% if task_todo.task_status == Settings.task_status[:todo] then %>
+      data-link="<%= update_status_task_path(task_todo, new_status: Settings.task_status[:doing])%>" 
+      <% end %>
+    ><%= task_todo.memo %></td>
+    <td>
+
+<%= editable task_todo, :memo, type: "textarea" %>
+
+Bootstrap Editable Rails
+https://github.com/bootstrap-ruby/bootstrap-editable-rails
+
+http://blog.scimpr.com/2013/01/28/%E6%96%87%E5%AD%97%E3%82%92%E3%83%80%E3%83%96%E3%83%AB%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%97%E3%81%A6%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E7%B7%A8%E9%9B%86/
+
+https://github.com/werein/x-editable-rails
+https://vitalets.github.io/x-editable/docs.html
+https://vitalets.github.io/x-editable/demo-bs3.html?c=popup
+
+<h2>HISTORY <small>WT:00:00 BT:00:00</small></h2>
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Aug 31th 2015]
+
+DONE: Title
+DONE: Action Vertical button
+DONE: Adjust Column width
+TODO: Organize navi
+	TODO: Date, Name
+	TODO: Current status
+ TODO: archaeologist [August 31, 2015] |HOME|SUMMARY|Manage projects|  [da] logout
+TODO: Summary
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Sep 25th 2015]
+
+BUG: If during working, don't clear it
+TODO: Mark group by distinct day
+TODO: Hide DONE after 1 month
+TODO: Auto reload
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Oct 27th 2015]
+
+DONE: If during working, don't clear it
+DONE: Filter DONE in one month
+DONE: Dump data and absorb it into local db
+
+rsync -avzh root@192.168.0.45:/usr/local/src/archaeologist/archaeologist/db/development.sqlite3 ./development.sqlite33
+
+/usr/local/src/archaeologist/archaeologist/db/development.sqlite3
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Oct 28th 2015]
+
+TODO: Dynamic modification when push DOING / PEND / DONE.
+	TODO: Coffee Script to Javascript?
+	TODO: http://stackoverflow.com/questions/14658606/use-javascript-in-rails-3-2-without-coffeescript
+
+
+Rails javascript auto reload
+
+Ajax
+
+     <div class="btn-group-vertical">
+        <!--
+        <a class="btn btn-default btn-xs" href="/tasks/2/update_status?new_status=4">DOING</a> -->
+        <a class="btn btn-warning btn-xs" href="/tasks/2/update_status?new_status=2">PEND</a>
+        <a class="btn btn-success btn-xs" href="/tasks/2/update_status?new_status=3">DONE</a>
+      </div>
+
+http://stackoverflow.com/questions/11464057/coffeescript-function-created-in-app-assets-javascript-not-found
+
+To make it accessible from outside, all you need to do is add an '@' in front. This will attach the function to the window object.
+
+@myFunction = (variable) ->
+
+http://ruby.studio-kingdom.com/rails/guides/working_with_javascript_in_rails
+
+15:44 --
+
+Crtl + i -> Reindent
+
+DONE: How to create a mock
+	Scaffold
+	http://www.rubylife.jp/rails/scaffold/
+TODO: Check Ruby + Ajax
+
+remote: true
+
+This tutorial sucks.
+http://www.gotealeaf.com/blog/the-detailed-guide-on-how-ajax-works-with-ruby-on-rails
+
+Yosemiteにアップデート後bundle install ができなくなった話
+http://qiita.com/nakanowax/items/ef70fa43bc8069ca6bbe
+
+TODO: Excersize this tutorial
+https://richonrails.com/articles/basic-ajax-in-ruby-on-rails
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Oct 29th 2015]
+
+TODO: Excersize this tutorial
+https://richonrails.com/articles/basic-ajax-in-ruby-on-rails
+
+	13:02 --
+	It's little complicated, But understandable.
+
+14:06 --
+TODO: 
+
+<tbody class="product-index">
+      <%= render "index" %>
+</tbody>
+
+DONE: Test it could append new task with ajax.
+DONE: After the updating has been done, x-editable was interupped.
+	-> dismantled ruby script of x-editable-ruby and added javascript into _index_todo.html.erb
+
+TODO: Auto reload DOING/PEND/DONE
+
+<span class="editable" title="Task name" data-type="text" data-model="task" data-name="task_name" data-value="With Apatch, not rails server" data-placeholder="Task name" data-url="/tasks/2">With Apatch, not rails server</span>
+
+<span class="editable" title="Memo" data-type="textarea" data-model="task" data-name="memo" data-value="For Synch" data-placeholder="Memo" data-url="/tasks/2">For Synch</span>
+
+DONE: Auto reload DOING/PEND/DONE
+TODO: AJAX for marking HISTORY
+TODO: AJAX for OFF button
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Oct 30th 2015]
+
+DONE: AJAX for marking HISTORY
+DONE: AJAX for OFF button
+
+# DEBUG
+@total_working_sec = 0
+@total_breaking_sec = 0
+@histories = Array.new
+
+update_status_task_path -> update_status.js.erb
+off_histories_path -> off.js.erb
+
+TODO: History page
+TODO: Summary page
+TODO: Delete task
+	-> This is unnecesarry. [TODO: Editable project id]. Because user hardly changes it.
+	-> TODO: Then how allow user to change it.
+TODO: Set Date and Name on top bar
+TODO: Priority? Sorted by priority?
+	Low-level-priority / Middle-level-priority / High-level-priority 
+		-> it's not interest
+	Idea1:
+		Delete PEND ststus and separate TODO list by SOMETHING
+
+		ASAP: 
+		NOTNOW:
+
+		Advantage:
+
+		Disadvantage:
+
+	Idea2:
+		Decide list order by last update date
+		Advantage:
+
+		Disadvantage:
+
+	For now, sort by project_id and create_date
+		-> DONE: 
+
+TODO: Something new concept that redmine doesn't have.
+
+PEND: Delete new task pop window. If + button is pushed, add one row and show popup at the place.
+
+DONE: Layout. Fix plus and OFF button at right side of window.
+	-> DONE: histories.scss won't load.........
+	-> DONE: Design
+
+TODO: Clarify layout
+	-> See fig
+
+TODO: Auto reload
+	-> Because if i change mac to win, everytime i need to reload it ******
+
+TODO: Hovor layout for History located at bottom (Cool one with javascript)
+	History page is just for LISTS
+	-> When click navi bar buttons, jump to the page directly without JS 
+
+How do I use Controller specific stylesheets in Rails 3.2.1?
+http://stackoverflow.com/questions/9245228/how-do-i-use-controller-specific-stylesheets-in-rails-3-2-1
+
+
+<h1><%= Time.now.to_formatted_s(:published_on) %>
+  <small>Hello <%= @user[:user_name] %></small>
+</h1>
+
+<!-- make active -->
+<li class="active"><%= link_to 'Task', histories_path %></li>
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Nov 2th 2015]
+
+TODO: Keep launching application on server
+	-> 
+	How To Setup a Rails 4 App With Apache and Passenger on CentOS 6
+	https://www.digitalocean.com/community/tutorials/how-to-setup-a-rails-4-app-with-apache-and-passenger-on-centos-6
+
+[root@localhost archaeologist]# cat /etc/redhat-release 
+CentOS release 5.10 (Final)
+
+[root@localhost archaeologist]# pwd
+/usr/local/src/archaeologist/archaeologist
+
+[root@localhost archaeologist]# which httpd
+/usr/sbin/httpd
+
+[root@localhost archaeologist]# yum update httpd
+
+Installed Packages
+httpd.i386                                                2.2.3-87.el5.centos                                                installed
+Available Packages
+httpd.i386                                                2.2.3-91.el5.centos                                                base 
+
+[root@localhost archaeologist]# chkconfig httpd on 
+
+[root@localhost archaeologist]# /etc/init.d/httpd start
+httpd を起動中: httpd: Syntax error on line 161 of /etc/httpd/conf/httpd.conf: Cannot load /etc/httpd/modules/mod_ldap.so into server: /etc/httpd/modules/mod_ldap.so: undefined symbol: apr_ldap_ssl_init
+                                                           [失敗]
+[root@localhost archaeologist]# yum install mod_ssl -y
+[root@localhost archaeologist]# yum update openssl
+
+Comment out two lines
+#LoadModule ldap_module modules/mod_ldap.so
+#LoadModule authnz_ldap_module modules/mod_authnz_ldap.so
+
+[root@localhost archaeologist]# ruby -v
+ruby 2.1.2p95 (2014-05-08 revision 45877) [i686-linux]
+
+[root@localhost archaeologist]# rails -v
+Rails 4.2.0
+
+[root@localhost archaeologist]# gem install passenger 
+
+yum install curl-devel httpd-devel 
+
+[root@localhost archaeologist]# passenger-install-apache2-module
+-bash: passenger-install-apache2-module: command not found
+
+Chef / Ansible
+
+[root@localhost archaeologist]# gem install passenger 
+Fetching: passenger-5.0.21.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed passenger-5.0.21
+Parsing documentation for passenger-5.0.21
+unable to convert "\x88" from ASCII-8BIT to UTF-8 for src/cxx_supportlib/vendor-modified/boost/thread/future.hpp, skipping
+unable to convert "\x97" from ASCII-8BIT to UTF-8 for src/cxx_supportlib/vendor-modified/boost/utility/declval.hpp, skipping
+Installing ri documentation for passenger-5.0.21
+Done installing documentation for passenger after 271 seconds
+1 gem installed
+
+find /usr/local/lib/ruby/gems/2.1.0/ -iname "*passenger*"
+
+[root@localhost archaeologist]# find / -iname "*passenger*"
+/root/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/doc/passenger-5.0.21
+
+Apache vs Nginx
+
+Phusion Passenger
+
+Apache + Passenger
+
+[root@localhost archaeologist]# /root/.rbenv/versions/2.1.3/bin/passenger-install-apache2-module
+
+[root@localhost archaeologist]# httpd -v
+Server version: Apache/2.2.3
+Server built:   Sep 16 2014 11:29:05
+
+drwxr-x---  25 root root  4096 11月  2 14:13 root
+[root@localhost archaeologist]# chmod o+x "/root"
+drwxr-x--x  25 root root  4096 11月  2 14:13 root
+
+16:59 --
+Re-try
+
+--------------------------------------------
+Almost there!
+
+Please edit your Apache configuration file, and add these lines:
+
+   LoadModule passenger_module /root/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/passenger-5.0.21/buildout/apache2/mod_passenger.so
+   <IfModule mod_passenger.c>
+     PassengerRoot /root/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/passenger-5.0.21
+     PassengerDefaultRuby /root/.rbenv/versions/2.1.3/bin/ruby
+   </IfModule>
+
+After you restart Apache, you are ready to deploy any number of web
+applications on Apache, with a minimum amount of configuration!
+
+Press ENTER when you are done editing.
+
+
+***********************
+--------------------------------------------
+
+Validating installation...
+
+ * Checking whether this Passenger install is in PATH... (!)
+
+   Please add /root/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/passenger-5.0.21/bin to PATH.
+   Otherwise you will get "command not found" errors upon running
+   any Passenger commands.
+   
+   Learn more at about PATH at:
+   
+     https://www.phusionpassenger.com/library/indepth/environment_variables.html#the-path-environment-variable
+
+ * Checking whether there are no other Passenger installations... (!)
+
+   You are currently validating against Phusion Passenger 5.0.21, located in:
+   
+     /root/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/passenger-5.0.21/bin/passenger
+   
+   Besides this Passenger installation, the following other
+   Passenger installations have also been detected:
+   
+     /root/.rbenv/shims/passenger
+   
+   Please uninstall these other Passenger installations to avoid
+   confusion or conflicts.
+
+ * Checking whether Apache is installed... ✓
+ * Checking whether the Passenger module is correctly configured in Apache... ✓
+
+Detected 0 error(s), 2 warning(s).
+Press ENTER to continue.
+**********************
+
+[root@localhost archaeologist]# service httpd restart 
+httpd を停止中:                                            [失敗]
+httpd を起動中: [Mon Nov 02 17:22:54 2015] [warn] NameVirtualHost *:80 has no VirtualHosts
+                                                           [  OK  ]
+
+yum install sqlite-devel 
+
+
+
+  997  cd /usr/local/src/archaeologist/archaeologist/
+  998  rails s -b 0.0.0.0
+
+  [root@localhost archaeologist]# tail -f /var/log/httpd/error_log 
+
+18:00--
+  Succeeded render
+
+[root@localhost html]# git clone https://github.com/dosuken123/archaeologist.git
+[root@localhost archaeologist]# bundle install
+[root@localhost archaeologist]# rake db:drop db:create db:migrate
+
+[root@localhost archaeologist]# pwd
+/var/www/html/archaeologist/archaeologist
+
+
+rake db:drop db:create db:migrate db:seed
+
+db:migrate
+
+rake aborted!
+StandardError: An error has occurred, this and all later migrations canceled:
+
+SQLite3::SQLException: database schema has changed: INSERT INTO "schema_migrations" ("version") VALUES (?)
+ActiveRecord::StatementInvalid: SQLite3::SQLException: database schema has changed: INSERT INTO "schema_migrations" ("version") VALUES (?)
+
+SQLite3::SQLException: database schema has changed
+
+
+
+rake db:drop db:create db:schema:load db:migrate db:seed
+
+https://github.com/KevinMcHugh/grouper/issues/8
+FWIW, when starting an app from a fresh install, rake db:schema:load is preferred
+
+Permission denied @ dir_s_mkdir
+
+http://stackoverflow.com/questions/7524262/permission-denied-in-tmp
+
+
+tmp -> automatically generated
+(it could be done by rails s -b 0.0.0.0   so problem is permission?)
+
+Permission problem!
+
+[root@localhost tmp]# chown -R apache:apache archaeologist/
+[root@localhost tmp]# chmod 777 -R cache
+
+
+************************************
+Deployment
+
+[root@localhost archaeologist]# git clone https://github.com/dosuken123/archaeologist.git
+[root@localhost archaeologist]# vi Gemfile
+-> gem 'therubyracer', platforms: :ruby
+[root@localhost archaeologist]# rm Gemfile.lock -y
+[root@localhost archaeologist]# bundle install
+[root@localhost archaeologist]# rake db:drop db:create db:schema:load db:migrate db:seed
+[root@localhost tmp]# mkdir tmp
+[root@localhost tmp]# mkdir tmp/cache/
+[root@localhost tmp]# chown -R apache:apache archaeologist/
+[root@localhost archaeologist]# chmod 777 -R cache
+
+SQLite3::SQLException: attempt to write a readonly database: INSERT INTO "users" ("user_name", "created_at", "updated_at") VALUES (?, ?, ?)
+
+
+WEBRICK -> Succeeded
+Apache + Passenger -> Failed
+
+TODO: Check why it doesn't work
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Nov 4th 2015]
+
+TODO: Gemfile switch by computer
+
+http://stackoverflow.com/questions/14192952/gemfile-when-developing-between-two-platforms
+
+Gemfile.lockをLinuxとMacで分ける
+http://qiita.com/moonsubaru/items/e55a1aa7febedf216502
+
+MIO-MACMINI-no-Mac-mini:archaeologist mio-macmini$ rails s
+/Users/mio-macmini/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.6.1/lib/bundler/shared_helpers.rb:24:in `default_gemfile': Could not locate Gemfile (Bundler::GemfileNotFound)
+	from /Users/mio-macmini/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.6.1/lib/bundler/shared_helpers.rb:29:in `default_lockfile'
+	from /Users/mio-macmini/.rvm/gems/ruby-2.1.1@global/gems/bundler-1.6.1/lib/bundler.rb:252:in `default_lockfile'
+	from /Users/mio-macmini/Desktop/MAEDA/task/WorkingHistoryServer/archaeologist/archaeologist/bin/spring:10:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+
+TODO: ignore Gem file lock
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# 2015/11/04 http://qiita.com/moonsubaru/items/e55a1aa7febedf216502
+# bundle install 例
+# bundle install --gemfile=gemfiles/darwin/Gemfile # Mac
+# bundle install --gemfile=gemfiles/linux/Gemfile # Linux
+# How to boot webrick
+# $ cd gemfiles/darwin/
+# $ rails s
+if RUBY_PLATFORM=~ /linux/
+	# For CentOS
+	gem 'therubyracer', platforms: :ruby
+else
+	# For Mac
+	gem 'therubyracer', '0.11.1', platforms: :ruby
+	gem 'libv8', '~> 3.11.8.13'
+end
+
+# Sample http://qiita.com/moonsubaru/items/e55a1aa7febedf216502
+# # for Mac
+# group :darwin do
+#   gem hoge
+# end
+
+# # for Linux
+# group :linux do
+#   gem hoge
+# end
+
+DONE: ignore Gem file lock
+
+http://stackoverflow.com/questions/3642085/make-bundler-use-different-gems-for-different-platforms
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Nov 5th 2015]
+
+DONE: Apatch + Passenger(Fix permission error)
+
+Issue -> 
+	Permission denied @ utime_internal - /var/www/html/archaeologist/archaeologist/tmp/cache/assets/development/sprockets/v3.0/oPKfk_y95RRZAxy6dLWiWzQl8D_Z_G6GgIdKdH3GLU0.cache
+
+https://www.rosehosting.com/blog/install-ruby-on-rails-with-apache-and-passenger-on-centos-6/
+
+yum -y install sudo
+
+bundle install --path vendor/bundle
+rake db:drop db:create db:schema:load db:migrate db:seed
+
+WORKED!!!!!!!!!!!!!!!!! with apache+Passenger
+
+*******************
+$ adduser newUser
+$ passwd newUser
+$ usermod -G wheel newUser
+$ visudo
+$ 	%wheel ALL=(ALL) NOPASSWD:ALL
+$ su newUser
+$ git clone https://github.com/dosuken123/archaeologist.git
+$ sudo /etc/init.d/httpd restart
+*******************
+
+DONE: Fix initialize bugs.
+DONE: Stop output
+
+vendor/bundle/
+
+************************************
+Deployment
+$ su newUser
+$ git clone hoge
+$ bundle install --path vendor/bundle
+$ rake db:drop db:create db:schema:load db:migrate db:seed
+$ service httpd restart
+************************************
+
+TODO: Copy db to new place
+
+http://stackoverflow.com/questions/7291381/rails-how-to-migrate-data-from-development-sqlite3-database-to-production-mysql#
+
+rake db:data:dump  
+RAILS_ENV=production rake db:data:load # It's for production
+
+TODO: History page
+	-> Show History lists on hisotry page
+
+冪等	 = idempotence
+
+Why do people use Heroku when AWS is present? What's distinguishing about Heroku
+http://stackoverflow.com/questions/9802259/why-do-people-use-heroku-when-aws-is-present-whats-distinguishing-about-heroku
+
+TODO: Try to deply on heroku
+
+MIO-MACMINI-no-Mac-mini:ruby-getting-started mio-macmini$ heroku create
+Creating afternoon-everglades-7615... done, stack is cedar-14
+https://afternoon-everglades-7615.herokuapp.com/ | https://git.heroku.com/afternoon-everglades-7615.git
+
+Set up postgresql
+
+MIO-MACMINI-no-Mac-mini:ruby-getting-started mio-macmini$ which psql
+/Applications/Postgres.app/Contents/Versions/9.4/bin/psql
+
+MIO-MACMINI-no-Mac-mini:ruby-getting-started mio-macmini$ vi ~/.bashrc 
+MIO-MACMINI-no-Mac-mini:ruby-getting-started mio-macmini$ source ~/.bashrc 
+
+MIO-MACMINI-no-Mac-mini:ruby-getting-started mio-macmini$ echo $PATH
+/Users/mio-macmini/.plenv/shims:/Users/mio-macmini/.pyenv/shims:/Users/mio-macmini/.rvm/gems/ruby-2.2.3/bin:/Users/mio-macmini/.rvm/gems/ruby-2.2.3@global/bin:/Users/mio-macmini/.rvm/rubies/ruby-2.2.3/bin:/Users/mio-macmini/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mio-macmini/android-sdk-macosx/tools:/Users/mio-macmini/android-sdk-macosx/platform-tools:/Users/mio-macmini/android-ndk-r9d/:/Users/mio-macmini/.rvm/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+Download site
+http://postgresapp.com/
+
+Installation Doc
+http://postgresapp.com/documentation/install.html
+
+!!! Never done
+Once Postgres is installed and you can connect, you’ll need to export the DATABASE_URL environment variable for your app to connect to it when running locally. E.g.:
+$ export DATABASE_URL=postgres:///$(whoami)
+!!!
+
+So far, done by here
+https://devcenter.heroku.com/articles/getting-started-with-ruby#declare-app-dependencies
+
+$ bundle install
+<= 1.8.6 : unsupported
+ = 1.8.7 : gem install rdoc-data; rdoc-data --install
+ = 1.9.1 : gem install rdoc-data; rdoc-data --install
+>= 1.9.2 : nothing to do! Yay!
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Nov 6th 2015]
+
+11:41 --
+
+There is a necessary step to launch postgres before "bundle exec rake db:create db:migrate"
+launch postgres -> Click "Postgres" application
+
+*******************************
+Comparision with each web languages and frameworks
+
+* Each frameworks have each advantages and disadvantages
+
+[Languages]
+Ruby / PHP / Node.js (Javascript) / Python / Java / Go / Clojure / Scala
+
+[Frameworks]
+
+Ruby: 
+	Rails:	CRUD workflow
+	Sinatra:	
+Python: 
+	Django: CMS
+Javascript:
+	Node.js
+Java:
+	Spring
+PHP:
+	Laravel
+	Symfony2
+	Nette
+Go:
+
+	- Google language
+
+[Purpose]
+
+Easy to launch / Well documented / Share percentages / In demand by whole worlds / 
+
+[Keywords]
+
+Trends / Development / backend
+
+Angular.js is front-end (MVC)
+
+Node.js vs Rails
+Node.js vs Golang
+Rails vs Golang
+
+MongoDB
+
+18:25 --
+
+Go on rails
+
+psql Local setup
+https://devcenter.heroku.com/articles/heroku-postgresql#local-setup
+
+https://damp-beach-1066.herokuapp.com/
+
+$ heroku local  -> http://localhost:5000/
+
+DONE: Manipulate along Heroku tutorial
+https://devcenter.heroku.com/articles/getting-started-with-ruby#next-steps
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Nov 9th 2015]
+
+11:27 --
+
+TODO: History page
+	-> Show History lists on hisotry page
+	-> scroll down to bottom
+
+TODO: Mark selected tab
+
+<h2>HISTORY <small>WT:<%= Time.at(@total_working_sec).utc.to_formatted_s(:time) %> BT:<%= Time.at(@total_breaking_sec).utc.to_formatted_s(:time) %></small></h2>
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Dec 2nd 2015]
+
+Heroku dir
+MIO-MACMINI-no-Mac-mini:ruby-getting-started mio-macmini$ pwd
+/Users/mio-macmini/Desktop/bkup/20151105/ruby-getting-started
+
+<li><%= link_to 'History', histories_path(anchor: "history-group-#{@group_histories.count-1}") %></li>
+
+DONE: Mark selected tab
+DONE: Set website icon
+	-> http://www.favicon.cc/?
+
+<li><%= link_to 'Task', tasks_path %></li>
+        <li><%= link_to 'History', histories_path(anchor: "history-group-bottom") %></li>
+        <li><%= link_to 'Summary', summaries_path %></li>
+        <li><%= link_to 'Manage Project', projects_path %></li>
+
+18:35 --
+
+DONE: Fix the navi bar
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Dec 3nd 2015]
+
+TODO: Generate an icon when create new project.
+	-> Set it as initial icon
+	-> Show it on "projects" ans "tasks" - the left pain and when appened new task
+	TODO: The feature of choosing project when generate new task is little collapsed
+	-> Set same icon size. Need discription?
+
+Mac OS X環境にrmagickをインストールする決定版
+http://qiita.com/yokozawa/items/937375aab0dd6d6ff334
+
+$brew install gs
+http://stackoverflow.com/questions/1014506/imagemagickerror-unable-to-read-font-null-null
+	-> Succeeded to save img
+	TODO: Customize design 
+
+ImageMagickError unable to read font `(null)': `(null)'
+http://stackoverflow.com/questions/1014506/imagemagickerror-unable-to-read-font-null-null
+
+TODO: Prepare color set and set it as background color randomly
+	-> Restrict to three character
+
+http://oropon.hatenablog.com/entry/2014/05/14/034849
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Dec 4th 2015]
+
+DONE: Generate an icon when create new project.
+	-> DONE: Set it as initial icon
+DONE: IN Manage Project, ony a feature to append project. -> it could be editable later.
+	-> DONE: column layout
+	-> PEND: Arrange edit view.
+		DONE: Regenerate icon path
+TODO: The feature of choosing project when generate new task is little collapsed
+	-> Set same icon size. Need discription?
+
+DONE: Show it on "projects" ans "tasks" - the left pain and when appened new task
+
+DONE: Prepare color set and set it as background color randomly
+	-> Restrict to three character
+
+http://flatuicolors.com/
+
+<%= form_for :project, url: projects_path do |f| %>
+  <p>
+    <%= f.label "Project name" %><br>
+    <%= f.text_field :project_name %>
+  </p>
+  <p>
+  	<%= f.label "Icon path (option)" %>  <br>
+  	<%= f.file_field :imageobject %>
+  </p>
+  <p>
+    <%= f.submit "New project" %>
+  </p>
+<% end %>
+
+http://jsfiddle.net/hashem/ut5sbqvz/
+
+18:00 --
+
+
+<td><%= @projects.find(task_todo.project_id).project_name %></td>
+
+<% project = @projects.find(task_done.project_id) %>
+    <% if project.icon_path != nil %>
+    <td class="col-xs-2 col-sm-2 col-md-2">
+      <%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path) %>
+    </td>
+    <% else %>
+    <td><%= project.project_name %></td>
+    <% end %>
+
+TODO: The feature of choosing project when generate new task is little collapsed
+	-> Set same icon size. Need discription?
+
+<div class="row">
+        <div class="col-lg-12">
+          <h2 class="page-header">Choose project</h2>
+        </div>
+        <% @projects.each do |project| %>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label class="radio-image-button">
+            <div class="thumbnail">
+              <% if @projects[0] == project then %> 
+              <%= f.radio_button :project_id, project.id, :checked => "checked" %> 
+              <% else %> 
+              <%= f.radio_button :project_id, project.id %> 
+              <% end %> 
+              <% if project.icon_path != nil %>
+              <%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path), class: "img-thumbnail" %>
+              <% end %>
+              <div class="caption">
+                <p><%= project.project_name %></p>
+              </div>
+            </div>
+          </label>
+        </div>
+        <% end %>
+      </div>
+
+$ rake db:drop db:create db:schema:load db:migrate db:seed
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Dec 8th 2015]
+
+TODO: Selectable row
+
+
+<% if false %>
+<div class="row">
+	<div class="col-lg-12">
+		<h2 class="page-header">Project lists</h2>
+	</div>
+	<% @projects.each do |project| %>
+	<div class="col-sm-3 col-md-3 col-lg-3">
+		<div class="thumbnail">
+			<% if project.icon_path != nil %>
+			<%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path) %>
+			<% end %>
+			<div class="caption">
+				<h3><%= project.project_name %></h3>
+				<p><%= link_to 'Edit', edit_project_path(project), class: "btn btn-primary" %>
+					<%= link_to 'Delete', project_path(project),
+					method: :delete,
+					data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
+				</p>
+			</div>
+		</div>
+	</div>
+	<% end %>
+</div>
+<% end %>
+
+<% if false %>
+<h2>Project lists</h2>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Project name</th>
+		<th>Icon path</th>
+	</tr>
+
+	<% @projects.each do |project| %>
+	<tr>
+		<td><%= project.id %></td>
+		<td><%= project.project_name %></td>
+		<td><%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path) %>
+		</td>
+		<td><%= link_to 'Edit', edit_project_path(project) %></td>
+		<td><%= link_to 'Delete', project_path(project),
+	        method: :delete,
+	        data: { confirm: 'Are you sure?' } %></td>
+	</tr>
+	<% end %>
+</table>
+<% end %>
+
+
+<% if false then %>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="page-header">Choose project</h2>
+        </div>
+        <% @projects.each do |project| %>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <label class="radio-image-button">
+            <div class="thumbnail">
+              <% if @projects[0] == project then %> 
+              <%= f.radio_button :project_id, project.id, :checked => "checked" %> 
+              <% else %> 
+              <%= f.radio_button :project_id, project.id %> 
+              <% end %> 
+              <% if project.icon_path != nil %>
+              <%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path), class: "img-thumbnail" %>
+              <% end %>
+              <div class="caption">
+                <p><%= project.project_name %></p>
+              </div>
+            </div>
+          </label>
+        </div>
+        <% end %>
+      </div>
+      <% end %>
+
+<% if false then %>
+      <h2>Project lists</h2>
+      <table class="table">
+        <% if @projects != nil then %>
+        <% @projects.each do |project| %>
+        <tr>
+          <% if project.icon_path != nil %>
+          <td class="col-xs-2 col-sm-2 col-md-2">
+            <%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path) %>
+          </td>
+          <% end %>
+          <td class="col-xs-5 col-sm-5 col-md-5"><%= project.project_name %></td>
+        </tr>
+        <% end %>
+        <% end %>
+      </table>
+      <% end %>
+
+TODO: Hovor layout for History located at bottom (Cool one with javascript)
+	History page is just for LISTS
+	-> When click navi bar buttons, jump to the page directly without JS 
+
+.progress-bar-purple {
+.progress-bar-orange {
+
+http://stackoverflow.com/questions/26219670/how-can-i-change-color-of-bootstrap-progress-bar-with-custom-color
+
+TODO: Abandon project icon setting
+	-> TODO: setable project color
+	-> Use it as History and Summary
+
+/////////////////////////////////////////////////////////////////////////////////////
+[Dec 22th 2015]
+

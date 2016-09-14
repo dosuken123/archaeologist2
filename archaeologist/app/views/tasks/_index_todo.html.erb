@@ -1,0 +1,41 @@
+<% @tasks_todo.each do |task_todo| %>
+	<tr <% if task_todo.task_status == Settings.task_status[:doing] then %> 
+		id="doing-column"
+		<% end %>
+		>
+		<% project = @projects.find(task_todo.project_id) %>
+		<% if project.icon_path != nil %>
+		<td class="col-xs-2 col-sm-2 col-md-2">
+			<%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path) %>
+		</td>
+		<% else %>
+		<td><%= project.project_name %></td>
+		<% end %>
+		<td>
+			<% if false %>
+			<%= editable task_todo, :task_name %>
+			<% end %>
+			<span class="editable" title="Task name" data-type="text" data-model="task" data-name="task_name" data-value="<%= task_todo.task_name %>" data-placeholder="Task name" data-url="/tasks/<%= task_todo.id %>"><%= task_todo.task_name %></span>
+		</td>
+		<td>
+			<% if false %>
+			<%= editable task_todo, :memo, type: "textarea" %>
+			<% end %>
+			<span class="editable" title="Memo" data-type="textarea" data-model="task" data-name="memo" data-value="<%= task_todo.memo %>" data-placeholder="Memo" data-url="/tasks/<%= task_todo.id %>"><%= task_todo.memo %></span>
+		</td>
+		<td>
+			<div class="btn-group-vertical">
+				<%= link_to 'DOING', update_status_task_path(task_todo, new_status: Settings.task_status[:doing]), remote: true, class: "btn btn-default btn-xs" %>
+				<%= link_to 'PEND', update_status_task_path(task_todo, new_status: Settings.task_status[:pend]), remote: true, class: "btn btn-warning btn-xs" %>
+				<%= link_to 'DONE', update_status_task_path(task_todo, new_status: Settings.task_status[:done]), remote: true, class: "btn btn-success btn-xs" %>
+			</div>
+		</td>
+	</tr>
+<% end %>
+
+<!-- Oct 29th for compatible against to dynamic DOM -->
+<script>
+$('.editable').editable({
+	mode: 'popup'
+});
+</script>

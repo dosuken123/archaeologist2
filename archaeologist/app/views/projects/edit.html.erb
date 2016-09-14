@@ -1,0 +1,19 @@
+<h1>Edit project name</h1>
+
+<p> Hello <%= @user[:user_name] %> </p>
+
+<%= link_to 'Back to project list', projects_path %>
+
+<%= form_for @project do |f| %>
+  <p>
+    <%= f.label :project_name %><br>
+    <%= f.text_field :project_name %>
+  </p>
+  <p>
+  	<%= f.label :icon_path %><br>
+  	<%= f.text_field :icon_path %>
+  </p>
+  <p>
+    <%= f.submit "update" %>
+  </p>
+<% end %>

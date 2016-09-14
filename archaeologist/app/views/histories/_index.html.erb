@@ -1,0 +1,83 @@
+<% if false %>
+<h2>
+  <% if @histories.count > 0 %>
+  <%= @histories[0].created_at.to_date.to_formatted_s(:long_ordinal) %> 
+  <small>
+    W=>
+    <%= Time.at(@total_working_sec).utc.to_formatted_s(:time) %> 
+    B=>
+    <%= Time.at(@total_breaking_sec).utc.to_formatted_s(:time) %>
+  </small>
+  <% end %>
+</h2>
+<% end %>
+
+<% if @histories != nil && @histories.count > 0 %>
+<div class="history-header">
+  <div class="history-header-left">
+    <h2><%= @histories[0].created_at.to_date.to_formatted_s(:long_ordinal) %></h2>
+  </div>
+  <div class="history-header-right">
+    <div class="progress">
+      <% (0..9).each do |i| %>
+      <div class="progress-bar progress-bar-<%= i %>" role="progressbar" style="width:10%">
+        trivia
+      </div>
+      <% end %>
+      <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">
+        OFF
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<table class="table">
+  <thead>
+     <tr>
+      <th class="col-xs-1 col-sm-1 col-md-1">Time</th>
+      <th class="col-xs-3 col-sm-3 col-md-3">Project</th>
+      <th class="col-xs-8 col-sm-8 col-md-8">TaskName</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @histories.each do |history| %>
+    <tr>
+      <td><%= history.created_at.in_time_zone('Tokyo').to_formatted_s(:time) %></td>
+      <td>
+        <% if history.is_off == 1 then %> 
+        OFF
+        <% else %> 
+        <%= @projects.find(history.project_id).project_name %>
+        <% end %> 
+      </td>
+      <td>
+        <% if history.is_off == 1 then %> 
+        OFF
+        <% else %> 
+          <% if false %> 
+            <%= @tasks.find(history.task_id).task_name %>
+          <% end %> 
+
+          <!-- Search it from fetched tasks -->
+          <% t = @tasks_todo.find_by(id: history.task_id) %> 
+          <% if t != nil %>
+            <%= t.task_name %>
+          <% else %>
+            <% t = @tasks_pend.find_by(id: history.task_id) %> 
+            <% if t != nil %>
+              <%= t.task_name %>
+            <% else %>
+              <% t = @tasks_done.find_by(id: history.task_id) %> 
+              <% if t != nil %>
+                <%= t.task_name %>
+              <% end %> 
+            <% end %> 
+          <% end %> 
+
+        <% end %> 
+    </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

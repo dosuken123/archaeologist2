@@ -1,0 +1,5 @@
+<% if @histories.count == 0 || @histories[-1].is_off == 1 %>
+  <i class="btn btn-info disabled">OFF</i>
+<% else %>
+  <%= link_to "OFF", off_tasks_path, remote: true, class: "btn btn-info" %>
+<% end %>

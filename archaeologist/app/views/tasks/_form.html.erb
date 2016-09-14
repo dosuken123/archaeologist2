@@ -1,0 +1,41 @@
+<%= form_for @task, remote: true, html: { style: "display:inline;" } do |f| %>
+  <div class="modal-body">
+    <div class="form-group">
+      <!-- Choose project -->
+      <h2 class="page-header">Choose project</h2>
+      <% if @projects != nil then %>
+      <% isFirst = false %>
+      <% @projects.each do |project| %>
+      <% next if project.del_flg == 1 %>
+      <label class="radio-image-button">
+        <div class="thumbnail">
+          <% if isFirst == false then %> 
+          <%= f.radio_button :project_id, project.id, :checked => "checked" %>
+          <% isFirst = true %>
+          <% else %> 
+          <%= f.radio_button :project_id, project.id %> 
+          <% end %> 
+          <% if project.icon_path != nil %>
+          <%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path), class: "img-thumbnail" %>
+          <% end %>
+        </div>
+      </label>
+      <% end %>
+      <% end %>
+    </div>
+    <!-- Task name -->
+    <div class="form-group">
+      <label for="message-text" class="control-label">Task name</label>
+      <%= f.text_field :task_name , class: "form-control", id: "message-text"%>
+    </div>
+    <!-- Memo -->
+    <div class="form-group">
+      <label for="message-text" class="control-label">Memo (e.g. Reference, Deadline)</label>
+      <%= f.text_area :memo , class: "form-control", id: "message-text"%>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <%= f.submit "Append", class: "btn btn-primary" %>
+  </div>
+<% end %>

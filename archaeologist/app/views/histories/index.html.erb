@@ -1,0 +1,14 @@
+<!-- History -->
+<% (0..@group_histories.count-1).each do |i| %>
+<% 	@histories = @group_histories[i] %>
+<% 	@total_working_sec = @group_total_working_sec[i] %>
+<% 	@total_breaking_sec = @group_total_breaking_sec[i] %>
+<div id="history-group-<%= i %>">
+	<!-- <div class="history-index"> -->
+		<%= render "index" %>
+<!-- 	</div> -->
+</div>
+<% end %>
+
+<!-- Dec 2nd 2015 Anchor from top navigation bar -->
+<div id="history-group-bottom">

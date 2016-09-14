@@ -1,0 +1,15 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 2015/12/04 Arrange jumbotron */
+.jumbotron.vertical-center {
+  margin-bottom: 0px; /* Remove the default bottom margin of .jumbotron */
+  margin-top: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.jumbotron.btn {
+  text-align: center;
+}

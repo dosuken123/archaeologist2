@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Archaeologist</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- HEADER -->
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">archaeologist</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="<%= 'active' if params[:controller] == 'tasks' %>"><%= link_to 'Task', tasks_path %></li>
+        <li class="<%= 'active' if params[:controller] == 'histories' %>"><%= link_to 'History', histories_path(anchor: "history-group-bottom") %></li>
+        <li class="<%= 'active' if params[:controller] == 'summaries' %>"><%= link_to 'Summary', summaries_path %></li>
+        <li class="<%= 'active' if params[:controller] == 'projects' %>"><%= link_to 'Project', projects_path %></li>
+      </ul>
+      <% if @user != nil && @user[:user_name] != nil %>
+      <p class="navbar-text navbar-right"><strong class="navbar-name"><%= @user[:user_name] %></strong><%= link_to 'Logout', logout_users_path, class: "navbar-link"%></p>
+      <% end %>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<!-- Wrap all page content here -->
+<div id="wrap">
+  <div class="container">
+   <%= yield %>
+ </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">© 2015 archaeologist</p>
+  </div>
+</footer>
+
+</body>
+</html>

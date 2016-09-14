@@ -1,0 +1,74 @@
+<div class="fixed-buttons">
+  <div class="btn-group-vertical">
+    <!-- Button: Add task -->
+    <%= link_to "+", new_task_path, remote: true, class: "btn btn-info" %>
+    <!-- Button: OFF -->
+    <span class="history-off-button">
+      <%= render "index_off" %>
+    </span>
+  </div>
+</div>
+
+<div id="task-modal" class="modal fade"></div>
+
+<% if false %>
+  <% if @histories.count == 0 || @histories[-1].is_off == 1 %>
+  <i class="btn btn-info disabled">OFF</i>
+  <% else %>
+    <%= link_to off_histories_path do %>
+    <i class="btn btn-info">OFF</i>
+    <% end %>
+  <% end %>
+<% end %>
+
+<!-- Task lists -->
+<h1>TODO</h1>
+<table class="table">
+  <thead>
+     <tr>
+      <th class="col-xs-2 col-sm-2 col-md-2">Project</th>
+      <th class="col-xs-5 col-sm-5 col-md-5">TaskName</th>
+      <th class="col-xs-4 col-sm-4 col-md-4">Memo</th>
+      <th class="col-xs-1 col-sm-1 col-md-1">Action</th>
+    </tr>
+  </thead>
+  <tbody class="task-todo-index">
+    <%= render "index_todo" %>
+  </tbody>
+</table>
+<h1>PEND</h1>
+<table class="table">
+  <thead>
+     <tr>
+      <th class="col-xs-2 col-sm-2 col-md-2">Project</th>
+      <th class="col-xs-5 col-sm-5 col-md-5">TaskName</th>
+      <th class="col-xs-4 col-sm-4 col-md-4">Memo</th>
+      <th class="col-xs-1 col-sm-1 col-md-1">Action</th>
+    </tr>
+  </thead>
+  <tbody class="task-pend-index">
+    <%= render "index_pend" %>
+  </tbody>
+</table>
+<h1>DONE</h1>
+<table class="table">
+  <thead>
+     <tr>
+      <th class="col-xs-2 col-sm-2 col-md-2">Project</th>
+      <th class="col-xs-5 col-sm-5 col-md-5">TaskName</th>
+      <th class="col-xs-4 col-sm-4 col-md-4">Memo</th>
+      <th class="col-xs-1 col-sm-1 col-md-1">Action</th>
+    </tr>
+  </thead>
+  <tbody class="task-done-index">
+    <%= render "index_done" %>
+  </tbody>
+</table>
+
+<!-- History -->
+<% if false %> <!--  Dec 8th 2015 Shed -->
+<br /> 
+<div class="history-index">
+<%= render "histories/index" %>
+</div>
+<% end %>

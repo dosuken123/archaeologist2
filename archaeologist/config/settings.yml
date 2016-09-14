@@ -1,0 +1,16 @@
+uploads:
+  common_dir: 'public/images/'
+  project_icon_dir: 'project_icon/'
+
+task_status:
+  undefine: 0
+  todo: 1
+  pend: 2
+  done: 3
+  doing: 4
+
+append_history:
+  ignore_min_minutes: 300	# 5 minutes
+
+show_history:
+  distinction_min_hours: 21600 # 6 hours

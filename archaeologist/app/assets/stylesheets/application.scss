@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ * Oct 30th 2015 I removed these lines for a reson i couldn't remember, but i need to restore it for combining other stylesheets.
+ *= require_self
+ *= require_tree . 
+ */
+
+/* # Aug 20th 2015 https://github.com/twbs/bootstrap-sass */
+/* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "editable/bootstrap-editable";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* For navbar navbar-default navbar-fixed-top */
+  padding-top: 50px;
+  /* Margin bottom by footer height */
+  margin-bottom: 30px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #f5f5f5;
+
+  .text-muted {
+  	margin-top: 10px;
+  	text-align: center;
+  }
+}
+
+/* radio-image-button on history contoroller */
+label.radio-image-button > div > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label.radio-image-button > div > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label.radio-image-button > div > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #0CC;
+}
+
+/* bootstrap3でtableをいい感じにレイアウト 
+   http://dokechin.hatenablog.com/entry/2013/11/21/201520 */
+.table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+/* doing-column */
+#doing-column {
+  /*color: white;*/
+  background-color: #FF6600;
+}
+
+.navbar-name {
+  margin-right: 10px;
+}

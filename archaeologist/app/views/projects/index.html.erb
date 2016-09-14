@@ -1,0 +1,38 @@
+<div class="jumbotron vertical-center container-fluid">
+	<div class="container text-center">
+<h2>Append new project</h2>
+<%= form_for :project, url: projects_path do |f| %>
+  <p>
+    <%= f.text_field :project_name, 'placeholder'=>'e.g. SuperMario', :class => 'text-center' %>
+  </p>
+  <p>
+    <%= f.submit "Append", :class => 'btn btn-primary'%>
+  </p>
+<% end %>
+	</div>
+</div>
+
+<h2>Project lists</h2>
+<table class="table">
+	<% if @projects != nil then %>
+	<% @projects.each do |project| %>
+	<tr>
+		<% if project.icon_path != nil %>
+		<td class="col-xs-2 col-sm-2 col-md-2">
+			<%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path) %>
+		</td>
+		<% end %>
+		<td class="col-xs-5 col-sm-5 col-md-5"><%= project.project_name %></td>
+		<td class="col-xs-4 col-sm-4 col-md-4">
+			<div class="btn-group">
+			<%= link_to 'Edit', edit_project_path(project), class: "btn btn-primary" %>
+			<%= link_to 'Delete', project_path(project),
+					method: :delete,
+					data: { confirm: 'Is it ok removing this project?' }, class: "btn btn-default" %>
+			<%= link_to 'Icon', generate_default_icon_project_path(project), class: "btn btn-info" %>
+		</div>
+		</td>
+	</tr>
+	<% end %>
+	<% end %>
+</table>

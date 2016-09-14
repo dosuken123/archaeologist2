@@ -1,0 +1,20 @@
+<% @tasks_done.each do |task_done| %>
+  <tr>
+    <% project = @projects.find(task_done.project_id) %>
+    <% if project.icon_path != nil %>
+    <td class="col-xs-2 col-sm-2 col-md-2">
+      <%= image_tag (Settings.uploads[:project_icon_dir]+project.icon_path) %>
+    </td>
+    <% else %>
+    <td><%= project.project_name %></td>
+    <% end %>
+    <td><%= task_done.task_name %></td>
+    <td><%= task_done.memo %></td>
+    <td>
+      <div class="btn-group-vertical">
+        <%= link_to 'TODO', update_status_task_path(task_done, new_status: Settings.task_status[:todo]), remote: true, class: "btn btn-primary btn-xs" %>
+        <%= link_to 'PEND', update_status_task_path(task_done, new_status: Settings.task_status[:pend]), remote: true, class: "btn btn-warning btn-xs" %>
+      </div>
+    </td>
+  </tr>
+<% end %>

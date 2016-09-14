@@ -1,0 +1,21 @@
+$(".history-index").html("<%= escape_javascript(render 'histories/index') %>")
+<% if (@task.prev_task_status == Settings.task_status[:todo] && @task.task_status == Settings.task_status[:doing]) ||
+	  (@task.prev_task_status == Settings.task_status[:doing] && @task.task_status == Settings.task_status[:todo]) %>
+	  $(".task-todo-index").html("<%= escape_javascript(render 'index_todo') %>")
+	  $(".history-off-button").html("<%= escape_javascript(render 'index_off') %>")
+<% else %>
+	<% if @task.prev_task_status == Settings.task_status[:todo] || @task.prev_task_status == Settings.task_status[:doing] %>
+		$(".task-todo-index").html("<%= escape_javascript(render 'index_todo') %>")
+	<% elsif @task.prev_task_status == Settings.task_status[:pend] %>
+		$(".task-pend-index").html("<%= escape_javascript(render 'index_pend') %>")
+	<% elsif @task.prev_task_status == Settings.task_status[:done] %>
+		$(".task-done-index").html("<%= escape_javascript(render 'index_done') %>")
+	<% end %>
+	<% if @task.task_status == Settings.task_status[:todo] || @task.task_status == Settings.task_status[:doing] %>
+		$(".task-todo-index").html("<%= escape_javascript(render 'index_todo') %>")
+	<% elsif @task.task_status == Settings.task_status[:pend] %>
+		$(".task-pend-index").html("<%= escape_javascript(render 'index_pend') %>")
+	<% elsif @task.task_status == Settings.task_status[:done] %>
+		$(".task-done-index").html("<%= escape_javascript(render 'index_done') %>")
+	<% end %>
+<% end %>
